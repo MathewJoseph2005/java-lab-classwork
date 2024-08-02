@@ -1,4 +1,4 @@
-package labwork;
+// package mathewjoseph;
 import java.util.*;
 /**
  * frequencyCounter
@@ -6,17 +6,29 @@ import java.util.*;
 public class frequencyCounter {
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the string:");
-        String str = sc.nextLine();
-        System.out.print("enter the char to search:");
-        char checkChar = sc.next().charAt(0);
-        int count = 0;
-        for (int i = 0; i < str.length(); i++) {
+        char j = 'y';
+        while(j=='y'){
+            Scanner sc = new Scanner(System.in);
+            System.out.print("Enter the string:");
+            String str = sc.nextLine();
+            System.out.print("enter the char to search:");
+            char checkChar = sc.next().charAt(0);
+            int count = 0;
+            for (int i = 0; i < str.length(); i++) {
             if (checkChar == str.charAt(i)) {
                 count++;
             }
         }
         System.out.print("the char "+checkChar+" was repeated "+count+" times");
+        System.out.println("Do you want to continue:(Y/N)");
+        char cont = sc.next().charAt(0);
+        if(cont == 'y' || cont =='Y'){
+            continue;
+        }else{
+            return;
+        }
     }
+    
+        }
+        
 }
