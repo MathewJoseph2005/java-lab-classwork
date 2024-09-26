@@ -8,7 +8,7 @@ public class frequencyCounter {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the string:");
-        String str = sc.nextLine();
+        String str = sc.nextLine().toLowerCase();
         System.out.print("enter the char to search:");
         char checkChar = sc.next().charAt(0);
         int count = 0;
